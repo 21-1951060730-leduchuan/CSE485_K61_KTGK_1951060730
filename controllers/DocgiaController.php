@@ -5,12 +5,12 @@ class DocgiaController{
     function index(){
         $dgModal = new DocgiaModal();
         $dgonor = $dgModal->getAllDG();
-        require_once 'view/Docgia/index.php';
+        require_once 'view/index.php';
     }
     function admin(){
         $bdModal = new DocgiaModal();
         $dgonor = $bdModal->getAllDG();
-        require_once 'view/Docgia/admin.php';
+        require_once 'view/admin.php';
     }
     function add(){
         $error = '';
@@ -50,7 +50,7 @@ class DocgiaController{
             }
 
         }
-        require_once 'view/Docgia/add.php';
+        require_once 'view/add.php';
     }
     function edit(){
         if (!isset($_GET['ten_donvi'])) {
