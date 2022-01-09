@@ -14,10 +14,7 @@ require 'view/template/header.php'
                         <label for="validationCustom01" class="form-label">Tên độc giả</label>
                         <input type="text" class="form-control" name="hovaten" id="validationCustom01" value="" required>
                     </div>
-                    <div class="col-md-6">
-                        <label for="validationCustom01" class="form-label">Tên đơn vị</label>
-                        <input type="text" class="form-control" name="ten_donvi" id="validationCustom01" value="" required>
-                    </div>
+              
                     <div>
                         <span class="me-3">Giới tính</span>
                         <div class="form-check form-check-inline">

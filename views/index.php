@@ -14,7 +14,7 @@ require 'view/template/header.php'
                 <table class="table">
                     <thead>
                         <tr>
-                        <th scope="col">Tên đơn vị</th>
+                        <th scope="col">Mã độc giả </th>
                             <th scope="col">Tên độc giả</th>
                             <th scope="col">Giới tính</th>
                             <th scope="col">Năm sinh</th>
@@ -29,7 +29,7 @@ require 'view/template/header.php'
                         foreach ($dgonor as $dg) {
                         ?>
                             <tr>
-                            <th scope="row"><?php echo $dg['ten_donvi'] ?></th>
+                            <th scope="row"><?php echo $dg['madg'] ?></th>
                                 <td><?php echo $dg['hovaten'] ?></td>
                                 <td><?php echo $dg['gioitinh'] ?></td>
                                 <td><?php echo $dg['namsinh'] ?></td>

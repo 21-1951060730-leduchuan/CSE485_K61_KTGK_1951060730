@@ -1,7 +1,7 @@
 <?php
 require 'view/template/header.php';
 //file hiển thị thông báo lỗi
-require_once 'view.message.php';
+require_once 'view/docgia/message.php';
 ?>
 <main>
     <div class="container">
@@ -20,7 +20,7 @@ require_once 'view.message.php';
                 <table class="table">
                     <thead>
                         <tr>
-                            <th scope="col">Tên đơn vị</th>
+                            <th scope="col">Mã độc giả</th>
                             <th scope="col">Tên độc giả</th>
                             <th scope="col">Giới tính</th>
                             <th scope="col">Năm sinh</th>
@@ -36,12 +36,12 @@ require_once 'view.message.php';
                         <?php
                         foreach ($dgonor as $dg) {
                             $urlEdit =
-                            "index.php?controller=docgia&action=edit&bdid=" . $dg['ten_donvi'];
+                            "index.php?controller=docgia&action=edit&madg=" . $dg['madg'];
                             $urlDelete =
-                            "index.php?controller=docgia&action=delete&bdid=" . $dg['ten_donvi'];
+                            "index.php?controller=docgia&action=delete&madg=" . $dg['madg'];
                         ?>
                             <tr>
-                                <th scope="row"><?php echo $dg['ten_donvi'] ?></th>
+                                <th scope="row"><?php echo $dg['madg'] ?></th>
                                 <td><?php echo $dg['hovaten'] ?></td>
                                 <td><?php echo $dg['gioitinh'] ?></td>
                                 <td><?php echo $dg['namsinh'] ?></td>
